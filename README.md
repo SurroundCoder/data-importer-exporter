@@ -8,7 +8,6 @@ This project is a Laravel application for importing and exporting Excel files to
 - **Export Data**: Export data from the database into Excel files.
 - **Data Validation**: Ensure data accuracy during the import process.
 - **Error Handling**: Display error messages for any issues during import/export.
-- **User Authentication**: Secure access to import/export features.
 
 ## Installation
 
@@ -25,7 +24,7 @@ Follow these steps to set up the project locally:
 
 1. **Clone the Repository**
     ```sh
-    git clone https://github.com/your-username/excel-import-export-laravel.git
+    git clone https://github.com/SurroundCoder/data-importer-exporter.git
     cd excel-import-export-laravel
     ```
 
@@ -36,10 +35,10 @@ Follow these steps to set up the project locally:
     ```
 
 3. **Configure Environment Variables**
-    Copy the `.env.example` file to `.env` and update the necessary configuration settings (database credentials, etc.).
+    Copy the `.env.dist` file to `.env` and update the necessary configuration settings (database credentials, etc.).
 
     ```sh
-    cp .env.example .env
+    cp .env.dist .env
     ```
 
 4. **Generate Application Key**
@@ -52,12 +51,7 @@ Follow these steps to set up the project locally:
     php artisan migrate
     ```
 
-6. **Install Laravel Excel**
-    ```sh
-    composer require maatwebsite/excel
-    ```
-
-7. **Run the Application**
+6. **Run the Application**
     ```sh
     php artisan serve
     ```
