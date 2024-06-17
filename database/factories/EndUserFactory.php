@@ -24,7 +24,7 @@ class EndUserFactory extends Factory
             'phone'         => $this->faker->phoneNumber,
             'email'         => $this->faker->unique()->safeEmail,
             'is_deleted'    => $this->faker->randomElement([0, 1]),
-            'created_at'    => time(),
+            'created_at'    => $this->faker->unixTime(),
             'updated_at'    => null,
             'updated_by'    => null,
             'deleted_at'    => null,

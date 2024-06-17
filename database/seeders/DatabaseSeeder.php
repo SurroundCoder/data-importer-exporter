@@ -10,6 +10,6 @@ class DatabaseSeeder extends Seeder {
      * Seed the application's database.
      */
     public function run(): void {
-        EndUser::factory()->count(5000)->create();
+        EndUser::factory()->count(10)->create();
     }
 }
