@@ -1,5 +1,9 @@
 <?php
 
+use Illuminate\Support\ServiceProvider;
+
+ServiceProvider::addProviderToBootstrapFile(Maatwebsite\Excel\ExcelServiceProvider::class);
+
 return [
 
     /*
@@ -124,3 +128,4 @@ return [
     ],
 
 ];
+ 
